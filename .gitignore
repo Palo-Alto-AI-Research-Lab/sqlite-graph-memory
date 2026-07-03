@@ -1,0 +1,7 @@
+index/
+turnstate.db
+_brain_answer.txt
+ab_last.json
+.env
+__pycache__/
+*.pyc
