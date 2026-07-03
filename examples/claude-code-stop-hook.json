@@ -1,0 +1,17 @@
+{
+  "//": "Snippet for ~/.claude/settings.json — registers turnstate_hook.py as a Stop hook.",
+  "//2": "Point the command at your clone; on Windows wrap it in a .cmd that calls python.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python /path/to/sqlite-graph-memory/turnstate_hook.py",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
