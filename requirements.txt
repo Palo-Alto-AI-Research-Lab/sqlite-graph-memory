@@ -1,0 +1,4 @@
+numpy
+sentence-transformers>=2.6
+# torch is pulled in by sentence-transformers; install the CUDA build manually
+# if you want GPU embedding/reranking.
