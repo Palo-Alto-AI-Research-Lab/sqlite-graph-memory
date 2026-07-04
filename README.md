@@ -140,6 +140,12 @@ what the `ab_recall` table accumulates evidence for.
   bridge / compare / temporal / navigational), and a full ablation matrix
   (hops × seed caps × neighbour caps × rerank pool × gating policy). The
   interesting question is not "does graph help" but *for which query classes*.
+- **Bi-temporal edges** (design note: [`docs/bitemporal.md`](docs/bitemporal.md)) —
+  when you materialize the graph instead of parsing it at query time, give every edge
+  a validity window (`valid_from` / `valid_to` / `observed_at`) so a rebuild *closes*
+  superseded facts instead of deleting them: history is kept, recall prefers the
+  present, and `as_of` queries can reconstruct the past. Non-destructive aging by
+  confidence decay. Day-1 A/B: ~60% fresher recall; the volume win is longitudinal.
 - A write-up on the pattern ("Graph RAG without graph extraction") is in progress.
 
 ## Models
