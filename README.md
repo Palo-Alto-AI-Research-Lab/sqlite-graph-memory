@@ -132,6 +132,16 @@ On a corpus this small the graph adds nothing (every note is already in the
 candidate pool) — the interesting deltas appear at scale, and that is exactly
 what the `ab_recall` table accumulates evidence for.
 
+## Roadmap
+
+- **v0.1** (now): the pilot as it runs daily — pipeline, ledger, A/B telemetry.
+- **v0.2**: a public benchmark — a synthetic 200–500 note mini-vault with real
+  wikilinks, ~200 hand-labeled queries stratified by type (entity / theme /
+  bridge / compare / temporal / navigational), and a full ablation matrix
+  (hops × seed caps × neighbour caps × rerank pool × gating policy). The
+  interesting question is not "does graph help" but *for which query classes*.
+- A write-up on the pattern ("Graph RAG without graph extraction") is in progress.
+
 ## Models
 
 - Embeddings: `intfloat/multilingual-e5-base` (multilingual; the home corpus is RU+EN)
