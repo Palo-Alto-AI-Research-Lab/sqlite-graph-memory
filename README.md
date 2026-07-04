@@ -107,6 +107,31 @@ Configuration is env-only; see `.env.example`. Everything defaults to the curren
 directory. GPU is used automatically if a CUDA torch build is present; CPU works fine
 for small corpora.
 
+### What `--ab` looks like
+
+On a toy 4-note corpus (real runs use a ~100k-note vault):
+
+```
+A/B RECALL: how should agent memory work
+(Direct=4 vector / Associative=+0 graph; Associative promoted 0 new notes into top-12, 0 of them via graph)
+
+--- DIRECT memory (vector) ---
+ 1. [  4.11] agent-memory
+ 2. [ -6.50] graph-rag
+ 3. [ -8.66] sqlite-ledger
+ 4. [ -9.73] cooking
+
+--- ASSOCIATIVE memory (vector+graph) ---
+ 1. [  4.11] agent-memory
+ 2. [ -6.50] graph-rag
+ 3. [ -8.66] sqlite-ledger
+ 4. [ -9.73] cooking
+```
+
+On a corpus this small the graph adds nothing (every note is already in the
+candidate pool) — the interesting deltas appear at scale, and that is exactly
+what the `ab_recall` table accumulates evidence for.
+
 ## Models
 
 - Embeddings: `intfloat/multilingual-e5-base` (multilingual; the home corpus is RU+EN)
