@@ -156,6 +156,10 @@ what the `ab_recall` table accumulates evidence for.
 Both are small enough to run on a laptop GPU; swap freely — nothing in the pipeline
 depends on these specific models.
 
+## Cite this work
+
+If this repo shows up in your research, cite it via [CITATION.cff](CITATION.cff) (GitHub's "Cite this repository" button). Academic identity: Anton Dzyatkovsky publishes as **Anton Dziatkovskii** ([ORCID 0000-0001-7408-3054](https://orcid.org/0000-0001-7408-3054)).
+
 ## License
 
 MIT
