@@ -172,3 +172,16 @@ Questions, war stories, or you want to run this on your own fleet:
 - 🐦 X: [@Tony_Stef_](https://x.com/Tony_Stef_)
 - 📣 Telegram: [@ClawRus](https://t.me/ClawRus) (RU) · [@ClawEng](https://t.me/ClawEng) (EN)
 - 🌐 [palo-alto.ai](https://palo-alto.ai) · [Palo Alto AI Research Lab](https://github.com/Palo-Alto-AI-Research-Lab)
+
+## Contributors welcome — and there is a queue
+
+Issues labelled [`accepted`](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues?q=is%3Aissue+is%3Aopen+label%3Aaccepted)
+are scoped, free to take, and nobody is on them. Comment **"claiming this"** — no permission needed —
+and it is yours for 7 days. New here? Start with
+[`good first issue`](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+
+**You keep the copyright to your code.** No CLA, no assignment, ever — your contribution goes in
+under this repo's existing license, the same terms as ours. We answer every issue and PR within
+48 hours, including "no, and here is why"; our silence is our bug, so ping the thread.
+
+Full deal: [CONTRIBUTING.md](https://github.com/Palo-Alto-AI-Research-Lab/.github/blob/main/CONTRIBUTING.md)
