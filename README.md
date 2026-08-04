@@ -141,8 +141,19 @@ table in [`schema.sql`](schema.sql) accumulates evidence for.
 
 ## Roadmap
 
-- **v0.1** (now): the pilot as it runs daily — pipeline, ledger, A/B telemetry, all in
-  `brain_ask.py` and `turnstate_hook.py`.
+**Now — [v0.1.1](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/releases).**
+The pilot as it runs daily: retrieval pipeline, per-turn ledger and A/B telemetry, all in
+`brain_ask.py` and `turnstate_hook.py`, plus the bi-temporal design note. Two known defects are
+open issues rather than footnotes:
+[#1](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues/1) (the indexer
+ingests `.stversions` backups, sync-conflict copies and `.obsidian` junk as if they were notes)
+and [#2](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues/2) (no tests at
+all — 677 lines of it).
+
+**Next:**
+
+- **A smoke test that runs without downloading a model** ([#2](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues/2)) — until that exists, "pilot" is the only word this repo is entitled to.
+- **Ignore rules for the indexer** ([#1](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/issues/1)).
 - **v0.2**: a public benchmark — a synthetic 200–500 note mini-vault with real wikilinks,
   ~200 hand-labeled queries stratified by type (entity / theme / bridge / compare /
   temporal / navigational), and a full ablation matrix (hops × seed caps × neighbour caps
@@ -157,6 +168,10 @@ table in [`schema.sql`](schema.sql) accumulates evidence for.
   with its caveats in `docs/bitemporal.md`: the volume win is longitudinal, so that is one
   day on one corpus, not a benchmark.
 - A write-up on the pattern ("Graph RAG without graph extraction") is in progress.
+
+Every noticeable change ships as a new release, so the
+[release feed](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory/releases) — not
+the commit graph — is where you can see whether "pilot" has stopped being the right word.
 
 ## Models
 
