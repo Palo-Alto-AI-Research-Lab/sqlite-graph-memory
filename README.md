@@ -219,3 +219,20 @@ under this repo's existing license, the same terms as ours. We answer every issu
 48 hours, including "no, and here is why"; our silence is our bug, so ping the thread.
 
 Full deal: [CONTRIBUTING.md](https://github.com/Palo-Alto-AI-Research-Lab/.github/blob/main/CONTRIBUTING.md)
+
+---
+
+<!--ecosystem-map:start-->
+
+## 🧩 One piece of a working system
+
+This repository is one piece lifted out of a live operation: one non-technical founder, an AI
+cofounder, and a fleet of machines that reach consensus with each other and wake the human only
+for money or the irreversible. It was extracted after it survived production, not written as a
+demo — and it runs on its own: nothing here phones home to the rest.
+
+**See how the whole thing fits together → [SYSTEM.md](https://github.com/Palo-Alto-AI-Research-Lab/Palo-Alto-AI-Research-Lab/blob/main/SYSTEM.md)**
+
+Its closest neighbours in the **memory** layer: [`second-brain-starter-kit`](https://github.com/Palo-Alto-AI-Research-Lab/second-brain-starter-kit) · [`voice2brain`](https://github.com/Palo-Alto-AI-Research-Lab/voice2brain)
+
+<!--ecosystem-map:end-->
